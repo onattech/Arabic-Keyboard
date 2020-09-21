@@ -1,0 +1,951 @@
+* {margin: 0; padding: 0;}
+
+body {
+	background: #f8f8f8;
+
+}
+	
+#keyboard {
+	z-index: 20;
+	margin: 50px auto 20px;
+	width: 800px;
+	height: 315px;
+	background: #bbb;
+	background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.27, rgb(212,216,219)),
+    color-stop(0.64, rgb(213,217,220)),
+    color-stop(0.95, rgb(230,233,235)),
+    color-stop(1, rgb(191,191,191))
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(212,216,219) 27%,
+    rgb(213,217,220) 64%,
+    rgb(230,233,235) 95%,
+    rgb(191,191,191) 100%
+);
+	-moz-border-radius-topleft: 7px 21px;
+	-moz-border-radius-topright: 7px 21px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 7px 21px;
+	border-top-right-radius: 7px 21px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 10px 0 0;
+	-webkit-box-shadow:  
+		inset 0 0 8px #bbb,
+		0 1px 0 #aaa,
+		0 4px 0 #bbb,
+		0 10px 30px #ddd;
+	-moz-box-shadow:  
+		inset 0 0 8px #bbb,
+		0 1px 0 #aaa,
+		0 4px 0 #bbb,
+		0 10px 30px #ddd;
+	box-shadow:  
+		inset 0 0 8px #bbb,
+		0 1px 0 #aaa,
+		0 4px 0 #bbb,
+		0 10px 30px #ddd;}
+
+ul {list-style-type: none; width: 784px; margin: 0 auto;}
+li {float: left;}
+
+
+.key{
+	display: block;
+	color: #aaa;
+	font: bold 9pt arial;
+	text-decoration: none;
+	text-align: center;
+	width: 44px;
+	height: 41px;
+	margin: 5px;
+	background: #eff0f2;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border-top: 1px solid #f5f5f5;
+	-webkit-box-shadow: 
+		inset 0 0 25px #e8e8e8,
+		0 1px 0 #c3c3c3,
+		0 2px 0 #c9c9c9,
+		0 2px 3px #333;
+	-moz-box-shadow: 
+		inset 0 0 25px #e8e8e8,
+		0 1px 0 #c3c3c3,
+		0 2px 0 #c9c9c9,
+		0 2px 3px #333;
+	box-shadow: 
+		inset 0 0 25px #e8e8e8,
+		0 1px 0 #c3c3c3,
+		0 2px 0 #c9c9c9,
+		0 2px 3px #333;
+	text-shadow: 0px 1px 0px #f5f5f5;
+	filter: dropshadow(color=#f5f5f5, offx=0, offy=1);}
+
+.key:active, .keydown {
+	color: #888;
+	background: #ebeced;
+	margin: 7px 5px 3px;
+	-webkit-box-shadow:
+		inset 0 0 25px #ddd,
+		0 0 3px #333;
+	-moz-box-shadow: 
+		inset 0 0 25px #ddd,
+		0 0 3px #333;
+	box-shadow: 
+		inset 0 0 25px #ddd,
+		0 0 3px #333;
+	border-top: 1px solid #eee;}
+	
+.fn span {
+	display: block;
+	margin: 14px 5px 0 0;
+	text-align: right;
+	font: bold 6pt arial;
+	text-transform: uppercase;}
+#esc {
+	margin: 6px 15px 0 0;
+	font-size: 7.5pt;
+	text-transform: lowercase;}
+
+
+#numbers li a span {
+	display: block;}
+	
+#numbers li a b {
+	margin: 3px 0 3px;
+	display: block;}
+
+#numbers li .alt b {display: block;margin: 0 0 3px;}
+
+#numbers li #delete span {
+	text-align: right;
+	margin: 23px 10px 0 0;
+	font-size: 7.5pt;
+	text-transform: lowercase;}
+	
+#qwerty li a span {
+	display: block;
+	margin: 3px 0 0 5px;
+	text-align: left;
+	text-transform: uppercase;}
+	
+#qwerty li #tab span {
+	text-align: left;
+	margin: 23px 0 0 10px;
+	font-size: 7.5pt;
+	text-transform: lowercase;}	
+
+#qwerty li .alt b {display: block; margin: 3px 0 0;}
+#qwerty li .alt span {margin: 2px 0 0;}
+
+
+#asdfg li a span {
+	display: block;
+	margin: 3px 0 0 5px;
+	text-align: left;
+	text-transform: uppercase;}
+
+#asdfg li .alt span {margin: 0; text-transform: lowercase;}
+#asdfg li .alt b {display: block; margin: 3px 0 0;}
+#asdfg li #caps b {
+	display: block;
+	background: #999;
+	width: 4px;
+	height: 4px;
+	border-radius: 10px;
+	margin: 9px 0 0 10px;
+	-webkit-box-shadow: inset 0 1px 0 #666;
+	-moz-box-shadow:inset 0 1px 0 #666;
+	box-shadow:inset 0 1px 0 #666;}
+#asdfg li #caps span {
+	text-align: left;
+	margin: 10px 0 0 10px;
+	font-size: 7.5pt;}
+#asdfg li #enter span {
+	text-align: right;
+	margin: 23px 10px 0 0;
+	font-size: 7.5pt;}
+
+
+#zxcvb li a span {
+	display: block;
+	margin: 3px 0 0 5px;
+	text-align: left;
+	text-transform: uppercase;}
+#zxcvb li .shiftleft span {
+	text-align: left;
+	margin: 23px 0 0 10px;
+	font-size: 7.5pt;
+	text-transform: lowercase;}
+#zxcvb li .shiftright span {
+	text-align: right;
+	margin: 23px 10px 0 0;
+	font-size: 7.5pt;
+	text-transform: lowercase;}
+#zxcvb li .alt b {display: block;margin: 4px 0 0;}
+#zxcvb li .alt span {margin: 0;}
+
+	
+#bottomrow li #fn span, #bottomrow li #control span, #bottomrow li #optionleft span, #bottomrow li #commandleft span {
+	display: block;
+	text-align: left;
+	margin: 31px 0 0 8px;
+	font-size: 7.5pt;
+	text-transform: lowercase;}
+
+#bottomrow li #optionright span, #bottomrow li #commandright span {
+	display: block;
+	text-align: right;
+	margin: 31px 8px 0 0;
+	font-size: 7.5pt;
+	text-transform: lowercase;}
+
+#bottomrow ol li #left span, #bottomrow ol li #right span, #bottomrow ol li #up span, #bottomrow ol li #down span {
+	display: block;
+	margin: 9px 0 0;}
+
+.fn {height: 26px; width: 46px;}
+#delete {width: 72px;}
+#tab {width: 72px;}
+#caps {width: 85px;}
+#enter {width: 85px;}
+.shiftleft, .shiftright {width: 112px;}
+#fn, #control, .option, .command, #spacebar {height: 49px;}
+
+#control {width: 56px;}
+.option {width: 46px;}
+.command {width: 67px;}
+#spacebar {width: 226px;}
+
+#left img, #up img, #down img, #right img {border: none;}
+ul ol {list-style-type: none;}
+#down {height: 23px; font-size: 8px; }
+#up, #left, #right {height: 24px; font-size: 8px; }
+#left, #right {margin: 30px 5px 5px;}
+#left:active, #right:active {margin: 32px 5px 3px;}
+#up {margin: 5px 5px 1px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;}
+#up:active {margin: 8px 5px -2px;}
+#down {margin: 0 5px 5px; border-top-left-radius: 0px; border-top-right-radius: 0px;}
+#down:Active {margin: 3px 5px 4px;}
+
+/* MY ADDITIONS */
+.c219.key > span, .c221.key > span, .c220.key > span, .c186.key > span, .c222.key > span,
+.c188.key > span, .c190.key > span, .c191.key > span {
+	margin-left: 7px !important;
+}
+
+.c219.key b, .c221.key b, .c220.key b, .c186.key b, .c222.key b, 
+.c188.key b,.c190.key b,.c191.key b{
+	text-align: left !important;
+	margin-left: 7px !important;
+}
+
+.ar, .second {
+	font-family: 'Noto Naskh Arabic UI';
+	color: rgb(240, 75, 103);
+	position: relative;
+	font-size: 1.2rem;
+}
+
+.c192 { /* ذ */
+	text-align: left;
+}
+.c192 b, .c192 > span {
+	margin-left: 10px !important;
+}
+.c192 span.ar { 
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-18px;
+	right:-18px;
+}
+.c192 span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-69px !important;
+	right:-22px;
+	font-size: 2rem;
+}
+
+.c49 { /* ١ */
+	text-align: left;
+}
+.c49 b, .c49 > span {
+	margin-left: 10px !important;
+}
+.c49 span.ar { 
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-20px;
+	right:-18px;
+}
+
+.c50 { /* ٢ */
+	text-align: left;
+}
+.c50 b, .c50 > span {
+	margin-left: 10px !important;
+}
+.c50 span.ar { 
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-20px;
+	right:-18px;
+}
+
+.c51 { /* ٣ */
+	text-align: left;
+}
+.c51 b, .c51 > span {
+	margin-left: 10px !important;
+}
+.c51 span.ar { 
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-20px;
+	right:-18px;
+}
+
+.c52 { /* ٤ */
+	text-align: left;
+}
+.c52 b, .c52 > span {
+	margin-left: 10px !important;
+}
+.c52 span.ar { 
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-20px;
+	right:-18px;
+}
+
+.c53 { /* ٥ */
+	text-align: left;
+}
+.c53 b, .c53 > span {
+	margin-left: 10px !important;
+}
+.c53 span.ar { 
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-20px;
+	right:-18px;
+}
+
+.c54 { /* ٦ */
+	text-align: left;
+}
+.c54 b, .c54 > span {
+	margin-left: 10px !important;
+}
+.c54 span.ar { 
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-20px;
+	right:-18px;
+}
+
+.c55 { /* ٧ */
+	text-align: left;
+}
+.c55 b, .c55 > span {
+	margin-left: 10px !important;
+}
+.c55 span.ar { 
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-20px;
+	right:-18px;
+}
+
+.c56 { /* ٨ */
+	text-align: left;
+}
+.c56 b, .c56 > span {
+	margin-left: 10px !important;
+}
+.c56 span.ar { 
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-20px;
+	right:-18px;
+}
+
+.c57 { /* ٩ */
+	text-align: left;
+}
+.c57 b, .c57 > span {
+	margin-left: 10px !important;
+}
+.c57 span.ar { 
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-20px;
+	right:-18px;
+}
+
+.c48 { /* ٠ */
+	text-align: left;
+}
+.c48 b, .c48 > span {
+	margin-left: 10px !important;
+}
+.c48 span.ar { 
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-20px;
+	right:-18px;
+}
+
+	/* QWERTY */
+
+.c81.key span.ar {
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-8px;
+	right:-6px;
+}
+
+.c81.key span.weak {
+	position:relative;
+	text-shadow:initial;
+	color:rgba(128, 128, 128, 0.380);
+	top:-47px !important;
+	right:-25px;
+	font-size: 2rem;
+}
+
+.c81.key span.vowel {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-96px !important;
+	right:-25px;
+	font-size: 2rem;
+}
+
+.c87.key span.ar { /* ص */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-8px;
+	right:-6px;
+}
+
+.c87.key span.weak {
+	position:relative;
+	text-shadow:initial;
+	color:rgba(128, 128, 128, 0.380);
+	top:-46px !important;
+	right:-25px;
+	font-size: 2rem;
+}
+
+.c87.key span.vowel {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-95px !important;
+	right:-25px;
+	font-size: 2rem;
+}
+
+.c69.key span.ar { /* ث */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-4px;
+	right:-9px;
+}
+.c69.key span.weak {
+	position:relative;
+	text-shadow:initial;
+	color:rgba(128, 128, 128, 0.380);
+	top:-45px !important;
+	right:-25px;
+	font-size: 2rem;
+}
+
+.c69.key span.vowel {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-94px !important;
+	right:-25px;
+	font-size: 2rem;
+}
+
+.c82.key span.ar { /* ق */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-8px;
+	right:-9px;
+}
+.c82.key span.weak {
+	position:relative;
+	text-shadow:initial;
+	color:rgba(128, 128, 128, 0.380);
+	top:-45px !important;
+	right:-25px;
+	font-size: 2rem;
+}
+
+.c82.key span.vowel {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-94px !important;
+	right:-24px;
+	font-size: 2rem;
+}
+.c84.key span.ar { /* ف */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-3px;
+	right:-8px;
+}
+.c84.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-56px !important;
+	right:-24px;
+	font-size: 1rem;
+}
+
+.c89.key span.ar { /* غ */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-8px;
+	right:-10px;
+}
+.c89.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-56px !important;
+	right:-28px;
+	font-size: 1rem;
+}
+
+.c85.key span.ar { /* ع */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-8px;
+	right:-10px;
+}
+
+.c85.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-52px !important;
+	right:-24px;
+	font-size: 1rem;
+}
+
+
+.c73.key span.ar { /* ھ */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-5px;
+	right:-10px;
+}
+.c73.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-55px !important;
+	right:-20px;
+	font-size: 0.9rem;
+}
+.c79.key span.ar { /* خ */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-9px;
+	right:-10px;
+}
+.c79.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-55px !important;
+	right:-22px;
+	font-size: 0.9rem;
+}
+
+.c80.key span.ar { /* ح */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-9px;
+	right:-10px;
+}
+
+.c80.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-55px !important;
+	right:-26px;
+	font-size: 1rem;
+}
+
+
+.c219.key span.ar { /* ج */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-24px;
+	right:-14px;
+}
+.c219.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-69px !important;
+	right:-20px;
+	font-size: .85rem;
+}
+
+
+.c221.key span.ar { /* د */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-19px;
+	right:-16px;
+
+}
+.c221.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-69px !important;
+	right:-20px;
+	font-size: .85rem;
+}
+
+    /* ASDFG */
+	
+.c65.key span.ar { /* ش */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-8px;
+	right:-6px;
+}
+
+.c65.key span.weak {
+	position:relative;
+	text-shadow:initial;
+	color:rgba(128, 128, 128, 0.380);
+	top:-52px !important;
+	right:-25px;
+	font-size: 2rem;
+}
+
+.c65.key span.vowel {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-118px !important;
+	right:-25px;
+	font-size: 2rem;
+}
+
+.c83.key span.ar { /* س */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-8px;
+	right:-6px;
+}
+
+.c83.key span.weak {
+	position:relative;
+	text-shadow:initial;
+	color:rgba(128, 128, 128, 0.380);
+	top:-52px !important;
+	right:-25px;
+	font-size: 2rem;
+}
+
+.c83.key span.vowel {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-118px !important;
+	right:-26px;
+	font-size: 2rem;
+}
+
+.c68.key span.ar { /* ي */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-10px;
+	right:-10px;
+}
+.c68.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-54px !important;
+	right:-27px;
+	font-size: .8rem;
+}
+
+.c70.key span.ar { /* ب */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-6px;
+	right:-9px;
+}
+.c70.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-54px !important;
+	right:-27px;
+	font-size: .8rem;
+}
+
+.c71.key span.ar { /* ل */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-7px;
+	right:-10px;
+}
+.c71.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-53px !important;
+	right:-25px;
+	font-size: .9rem;
+}
+
+.c72.key span.ar { /* ا */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-3px;
+	right:-14px;
+}
+.c72.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-50px !important;
+	right:-28px;
+	font-size: .9rem;
+}
+
+.c74.key span.ar { /* ت */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-3px;
+	right:-9px;
+}
+.c74.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-55px !important;
+	right:-28px;
+	font-size: .9rem;
+}
+
+.c75.key span.ar { /* ن */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-8px;
+	right:-9px;
+}
+.c75.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-58px !important;
+	right:-28px;
+	font-size: .9rem;
+}
+
+.c76.key span.ar { /* م */
+	text-shadow:initial;
+	color:rgb(240, 76, 103);
+	top:-9px;
+	right:-13px;
+}
+.c76.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-55px !important;
+	right:-26px;
+	font-size: .9rem;
+}
+
+.c186.key span.ar { /* ك */
+	text-shadow:initial;
+	color:rgb(240, 76, 103);
+	top:-16px;
+	right:-13px;
+}
+
+.c222.key span.ar { /* ط */
+	text-shadow:initial;
+	color:rgb(240, 76, 103);
+	top:-16px;
+	right:-11px;
+}
+
+.c90.key span.ar { /* ئ */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-9px;
+	right:-10px;
+}
+
+.c90.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-55px !important;
+	right:-22px;
+	font-size: .9rem;
+}
+
+.c88.key span.ar { /* ء */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-6px;
+	right:-12px;
+}
+
+.c88.key span.weak {
+	position:relative;
+	text-shadow:initial;
+	color:rgba(128, 128, 128, 0.380);
+	top:-44px !important;
+	right:-25px;
+	font-size: 2rem;
+}
+
+.c88.key span.vowel {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-94px !important;
+	right:-25px;
+	font-size: 2rem;
+}
+
+.c67.key span.ar { /* ؤ */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-8px;
+	right:-12px;
+}
+
+.c67.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-55px !important;
+	right:-26px;
+	font-size: .8rem;
+}
+
+.c86.key span.ar { /* ر */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-8px;
+	right:-14px;
+}
+
+.c86.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-55px !important;
+	right:-26px;
+	font-size: .8rem;
+}
+
+.c66.key span.ar { /* ﻻ */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-5px;
+	right:-12px;
+}
+
+.c66.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-53px !important;
+	right:-24px;
+	font-size: .9rem;
+}
+
+.c78.key span.ar { /* ى */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-8px;
+	right:-11px;
+}
+
+.c78.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-53px !important;
+	right:-28px;
+	font-size: .9rem;
+}
+
+.c77.key span.ar { /* ة */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-5px;
+	right:-12px;
+}
+
+.c77.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-53px !important;
+	right:-28px;
+	font-size: .9rem;
+}
+
+.c188.key span.ar { /* و */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-19px;
+	right:-13px;
+}
+
+.c190.key span.ar { /* ز */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-19px;
+	right:-15px;
+}
+
+.c191.key span.ar { /* ظ */
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-15px;
+	right:-12px;
+}
+
+.c191.key span.second {
+	position:relative;
+	text-shadow:initial;
+	color:rgb(240, 75, 103);
+	top:-63px !important;
+	right:-25px;
+	font-size: .9rem;
+}
