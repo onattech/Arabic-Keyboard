@@ -5,9 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
     <title>Arabic Keyboard</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <div id="keyboard">
+    <h2>Arabic Keyboard</h2>
+    <!-- <input type="text-area"> -->
+    <div id="text" contentEditable="true" oninput="handleChange()"></div>
+    <div id="keyboard" onclick="handleChange()">
         <!-- <ul>
             <li><a href="#" class="key c27 fn"><span id="esc">esc</span></a></li>
             <li><a href="#" class="key c112 fn"><span>F1</span></a></li>
@@ -103,6 +107,5 @@
             </ol> -->
         </ul>
     </div>
-
 </body>
 </html>

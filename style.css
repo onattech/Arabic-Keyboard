@@ -8,7 +8,37 @@ body {
 	background: #f8f8f8;
 
 }
-	
+
+h2 {
+	text-align: center;
+	margin-top: 10px;
+	color:gray;
+}
+
+/* input {
+	direction: rtl;
+	margin: 20px auto;
+	width: 750px;
+	display:flex;
+	font-family: 'Noto Naskh Arabic';
+	font-size: 1.5rem;
+	border:none; 
+
+} */
+
+#text {
+	display: block;
+	border-bottom: solid 1px #000;
+	padding: 10px 10px 3px 10px;
+	min-height: 3px;
+	width: 300px;
+	margin: 20px auto;  
+	direction: rtl;
+	font-family: 'Noto Naskh Arabic';
+	word-wrap: break-word;
+
+  }
+
 #keyboard {
 	z-index: 20;
 	margin: 50px auto 20px;
