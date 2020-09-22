@@ -1,3 +1,7 @@
+:root {
+	--main-color: rgb(240, 75, 103);
+}
+
 * {margin: 0; padding: 0;}
 
 body {
@@ -261,14 +265,14 @@ ul ol {list-style-type: none;}
 }
 .c192 span.ar { 
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-18px;
 	right:-18px;
 }
 .c192 span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-69px !important;
 	right:-22px;
 	font-size: 2rem;
@@ -282,7 +286,7 @@ ul ol {list-style-type: none;}
 }
 .c49 span.ar { 
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-20px;
 	right:-18px;
 }
@@ -295,7 +299,7 @@ ul ol {list-style-type: none;}
 }
 .c50 span.ar { 
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-20px;
 	right:-18px;
 }
@@ -308,7 +312,7 @@ ul ol {list-style-type: none;}
 }
 .c51 span.ar { 
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-20px;
 	right:-18px;
 }
@@ -321,7 +325,7 @@ ul ol {list-style-type: none;}
 }
 .c52 span.ar { 
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-20px;
 	right:-18px;
 }
@@ -334,7 +338,7 @@ ul ol {list-style-type: none;}
 }
 .c53 span.ar { 
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-20px;
 	right:-18px;
 }
@@ -347,7 +351,7 @@ ul ol {list-style-type: none;}
 }
 .c54 span.ar { 
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-20px;
 	right:-18px;
 }
@@ -360,7 +364,7 @@ ul ol {list-style-type: none;}
 }
 .c55 span.ar { 
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-20px;
 	right:-18px;
 }
@@ -373,7 +377,7 @@ ul ol {list-style-type: none;}
 }
 .c56 span.ar { 
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-20px;
 	right:-18px;
 }
@@ -386,7 +390,7 @@ ul ol {list-style-type: none;}
 }
 .c57 span.ar { 
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-20px;
 	right:-18px;
 }
@@ -399,7 +403,7 @@ ul ol {list-style-type: none;}
 }
 .c48 span.ar { 
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-20px;
 	right:-18px;
 }
@@ -408,7 +412,7 @@ ul ol {list-style-type: none;}
 
 .c81.key span.ar {
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-8px;
 	right:-6px;
 }
@@ -425,7 +429,7 @@ ul ol {list-style-type: none;}
 .c81.key span.vowel {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-96px !important;
 	right:-25px;
 	font-size: 2rem;
@@ -433,7 +437,7 @@ ul ol {list-style-type: none;}
 
 .c87.key span.ar { /* ص */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-8px;
 	right:-6px;
 }
@@ -450,7 +454,7 @@ ul ol {list-style-type: none;}
 .c87.key span.vowel {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-95px !important;
 	right:-25px;
 	font-size: 2rem;
@@ -458,7 +462,7 @@ ul ol {list-style-type: none;}
 
 .c69.key span.ar { /* ث */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-4px;
 	right:-9px;
 }
@@ -474,7 +478,7 @@ ul ol {list-style-type: none;}
 .c69.key span.vowel {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-94px !important;
 	right:-25px;
 	font-size: 2rem;
@@ -482,7 +486,7 @@ ul ol {list-style-type: none;}
 
 .c82.key span.ar { /* ق */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-8px;
 	right:-9px;
 }
@@ -498,21 +502,21 @@ ul ol {list-style-type: none;}
 .c82.key span.vowel {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-94px !important;
 	right:-24px;
 	font-size: 2rem;
 }
 .c84.key span.ar { /* ف */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-3px;
 	right:-8px;
 }
 .c84.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-56px !important;
 	right:-24px;
 	font-size: 1rem;
@@ -520,14 +524,14 @@ ul ol {list-style-type: none;}
 
 .c89.key span.ar { /* غ */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-8px;
 	right:-10px;
 }
 .c89.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-56px !important;
 	right:-28px;
 	font-size: 1rem;
@@ -535,7 +539,7 @@ ul ol {list-style-type: none;}
 
 .c85.key span.ar { /* ع */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-8px;
 	right:-10px;
 }
@@ -543,7 +547,7 @@ ul ol {list-style-type: none;}
 .c85.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-52px !important;
 	right:-24px;
 	font-size: 1rem;
@@ -552,28 +556,28 @@ ul ol {list-style-type: none;}
 
 .c73.key span.ar { /* ھ */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-5px;
 	right:-10px;
 }
 .c73.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-55px !important;
 	right:-20px;
 	font-size: 0.9rem;
 }
 .c79.key span.ar { /* خ */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-9px;
 	right:-10px;
 }
 .c79.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-55px !important;
 	right:-22px;
 	font-size: 0.9rem;
@@ -581,7 +585,7 @@ ul ol {list-style-type: none;}
 
 .c80.key span.ar { /* ح */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-9px;
 	right:-10px;
 }
@@ -589,7 +593,7 @@ ul ol {list-style-type: none;}
 .c80.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-55px !important;
 	right:-26px;
 	font-size: 1rem;
@@ -598,14 +602,14 @@ ul ol {list-style-type: none;}
 
 .c219.key span.ar { /* ج */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-24px;
 	right:-14px;
 }
 .c219.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-69px !important;
 	right:-20px;
 	font-size: .85rem;
@@ -614,7 +618,7 @@ ul ol {list-style-type: none;}
 
 .c221.key span.ar { /* د */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-19px;
 	right:-16px;
 
@@ -622,7 +626,7 @@ ul ol {list-style-type: none;}
 .c221.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-69px !important;
 	right:-20px;
 	font-size: .85rem;
@@ -632,7 +636,7 @@ ul ol {list-style-type: none;}
 	
 .c65.key span.ar { /* ش */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-8px;
 	right:-6px;
 }
@@ -649,7 +653,7 @@ ul ol {list-style-type: none;}
 .c65.key span.vowel {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-118px !important;
 	right:-25px;
 	font-size: 2rem;
@@ -657,7 +661,7 @@ ul ol {list-style-type: none;}
 
 .c83.key span.ar { /* س */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-8px;
 	right:-6px;
 }
@@ -674,7 +678,7 @@ ul ol {list-style-type: none;}
 .c83.key span.vowel {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-118px !important;
 	right:-26px;
 	font-size: 2rem;
@@ -682,14 +686,14 @@ ul ol {list-style-type: none;}
 
 .c68.key span.ar { /* ي */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-10px;
 	right:-10px;
 }
 .c68.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-54px !important;
 	right:-27px;
 	font-size: .8rem;
@@ -697,14 +701,14 @@ ul ol {list-style-type: none;}
 
 .c70.key span.ar { /* ب */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-6px;
 	right:-9px;
 }
 .c70.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-54px !important;
 	right:-27px;
 	font-size: .8rem;
@@ -712,14 +716,14 @@ ul ol {list-style-type: none;}
 
 .c71.key span.ar { /* ل */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-7px;
 	right:-10px;
 }
 .c71.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-53px !important;
 	right:-25px;
 	font-size: .9rem;
@@ -727,14 +731,14 @@ ul ol {list-style-type: none;}
 
 .c72.key span.ar { /* ا */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-3px;
 	right:-14px;
 }
 .c72.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-50px !important;
 	right:-28px;
 	font-size: .9rem;
@@ -742,14 +746,14 @@ ul ol {list-style-type: none;}
 
 .c74.key span.ar { /* ت */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-3px;
 	right:-9px;
 }
 .c74.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-55px !important;
 	right:-28px;
 	font-size: .9rem;
@@ -757,14 +761,14 @@ ul ol {list-style-type: none;}
 
 .c75.key span.ar { /* ن */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-8px;
 	right:-9px;
 }
 .c75.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-58px !important;
 	right:-28px;
 	font-size: .9rem;
@@ -772,14 +776,14 @@ ul ol {list-style-type: none;}
 
 .c76.key span.ar { /* م */
 	text-shadow:initial;
-	color:rgb(240, 76, 103);
+	color: var(--main-color);
 	top:-9px;
 	right:-13px;
 }
 .c76.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-55px !important;
 	right:-26px;
 	font-size: .9rem;
@@ -787,21 +791,21 @@ ul ol {list-style-type: none;}
 
 .c186.key span.ar { /* ك */
 	text-shadow:initial;
-	color:rgb(240, 76, 103);
+	color: var(--main-color);
 	top:-16px;
 	right:-13px;
 }
 
 .c222.key span.ar { /* ط */
 	text-shadow:initial;
-	color:rgb(240, 76, 103);
+	color: var(--main-color);
 	top:-16px;
 	right:-11px;
 }
 
 .c90.key span.ar { /* ئ */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-9px;
 	right:-10px;
 }
@@ -809,7 +813,7 @@ ul ol {list-style-type: none;}
 .c90.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-55px !important;
 	right:-22px;
 	font-size: .9rem;
@@ -817,7 +821,7 @@ ul ol {list-style-type: none;}
 
 .c88.key span.ar { /* ء */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-6px;
 	right:-12px;
 }
@@ -834,7 +838,7 @@ ul ol {list-style-type: none;}
 .c88.key span.vowel {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-94px !important;
 	right:-25px;
 	font-size: 2rem;
@@ -842,7 +846,7 @@ ul ol {list-style-type: none;}
 
 .c67.key span.ar { /* ؤ */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-8px;
 	right:-12px;
 }
@@ -850,7 +854,7 @@ ul ol {list-style-type: none;}
 .c67.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-55px !important;
 	right:-26px;
 	font-size: .8rem;
@@ -858,7 +862,7 @@ ul ol {list-style-type: none;}
 
 .c86.key span.ar { /* ر */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-8px;
 	right:-14px;
 }
@@ -866,7 +870,7 @@ ul ol {list-style-type: none;}
 .c86.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-55px !important;
 	right:-26px;
 	font-size: .8rem;
@@ -874,7 +878,7 @@ ul ol {list-style-type: none;}
 
 .c66.key span.ar { /* ﻻ */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-5px;
 	right:-12px;
 }
@@ -882,7 +886,7 @@ ul ol {list-style-type: none;}
 .c66.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-53px !important;
 	right:-24px;
 	font-size: .9rem;
@@ -890,7 +894,7 @@ ul ol {list-style-type: none;}
 
 .c78.key span.ar { /* ى */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-8px;
 	right:-11px;
 }
@@ -898,7 +902,7 @@ ul ol {list-style-type: none;}
 .c78.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-53px !important;
 	right:-28px;
 	font-size: .9rem;
@@ -906,7 +910,7 @@ ul ol {list-style-type: none;}
 
 .c77.key span.ar { /* ة */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-5px;
 	right:-12px;
 }
@@ -914,7 +918,7 @@ ul ol {list-style-type: none;}
 .c77.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-53px !important;
 	right:-28px;
 	font-size: .9rem;
@@ -922,21 +926,21 @@ ul ol {list-style-type: none;}
 
 .c188.key span.ar { /* و */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-19px;
 	right:-13px;
 }
 
 .c190.key span.ar { /* ز */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-19px;
 	right:-15px;
 }
 
 .c191.key span.ar { /* ظ */
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-15px;
 	right:-12px;
 }
@@ -944,7 +948,7 @@ ul ol {list-style-type: none;}
 .c191.key span.second {
 	position:relative;
 	text-shadow:initial;
-	color:rgb(240, 75, 103);
+	color: var(--main-color);
 	top:-63px !important;
 	right:-25px;
 	font-size: .9rem;
