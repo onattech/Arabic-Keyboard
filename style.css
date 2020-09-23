@@ -1,6 +1,3 @@
-:root {
-  --main-color: rgb(240, 75, 103);
-}
 
 * { 
   margin: 0;
@@ -117,18 +114,18 @@ li {
   border-top: 1px solid #eee;
 }
 
-.fn span {
+/* .fn span {
   display: block;
   margin: 14px 5px 0 0;
   text-align: right;
   font: bold 6pt arial;
   text-transform: uppercase;
-}
-#esc {
+} */
+/* #esc {
   margin: 6px 15px 0 0;
   font-size: 7.5pt;
   text-transform: lowercase;
-}
+} */
 
 #numbers li a span {
   display: block;
@@ -184,10 +181,10 @@ li {
   margin: 0;
   text-transform: lowercase;
 }
-#asdfg li .alt b {
+/* #asdfg li .alt b {
   display: block;
   margin: 3px 0 0;
-}
+} */
 #asdfg li #caps b {
   display: block;
   background: #999;
@@ -228,15 +225,15 @@ li {
   font-size: 7.5pt;
   text-transform: lowercase;
 }
-#zxcvb li .alt b {
+/* #zxcvb li .alt b {
   display: block;
   margin: 4px 0 0;
-}
-#zxcvb li .alt span {
+} */
+/* #zxcvb li .alt span {
   margin: 0;
-}
+} */
 
-#bottomrow li #fn span,
+/* #bottomrow li #fn span,
 #bottomrow li #control span,
 #bottomrow li #optionleft span,
 #bottomrow li #commandleft span {
@@ -245,9 +242,9 @@ li {
   margin: 31px 0 0 8px;
   font-size: 7.5pt;
   text-transform: lowercase;
-}
+} */
 
-#bottomrow li #optionright span,
+/* #bottomrow li #optionright span,
 #bottomrow li #commandright span {
   display: block;
   text-align: right;
@@ -262,12 +259,12 @@ li {
 #bottomrow ol li #down span {
   display: block;
   margin: 9px 0 0;
-}
+} */
 
-.fn {
+/* .fn {
   height: 26px;
   width: 46px;
-}
+} */
 #delete {
   width: 72px;
 }
@@ -284,15 +281,15 @@ li {
 .shiftright {
   width: 112px;
 }
-#fn,
+/* #fn,
 #control,
 .option,
-.command,
+.command, */
 #spacebar {
   height: 49px;
 }
 
-#control {
+/* #control {
   width: 56px;
 }
 .option {
@@ -300,12 +297,12 @@ li {
 }
 .command {
   width: 67px;
-}
+} */
 #spacebar {
   width: 316px;
 }
 
-#left img,
+/* #left img,
 #up img,
 #down img,
 #right img {
@@ -347,837 +344,17 @@ ul ol {
 }
 #down:active {
   margin: 3px 5px 4px;
-}
+} */
 
-/* MY ADDITIONS */
-.c219.key > span,
-.c221.key > span,
-.c220.key > span,
-.c186.key > span,
-.c222.key > span,
-.c188.key > span,
-.c190.key > span,
-.c191.key > span {
+.c220.key > span{
   margin-left: 7px !important;
 }
 
-.c219.key b,
-.c221.key b,
-.c220.key b,
-.c186.key b,
-.c222.key b,
-.c188.key b,
-.c190.key b,
-.c191.key b {
+.c220.key b{
   text-align: left !important;
   margin-left: 7px !important;
 }
-
-.ar,
-.second {
-  font-family: 'Noto Naskh Arabic UI';
-  color: rgb(240, 75, 103);
-  position: relative;
-  font-size: 1.2rem;
-}
-
-.c192 {
-  /* ذ */
-  text-align: left;
-}
-.c192 b,
-.c192 > span {
-  margin-left: 10px !important;
-}
-.c192 span.ar {
-  pointer-events: none;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -18px;
-  right: -18px;
-}
-.c192 span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -69px !important;
-  right: -22px;
-  font-size: 2rem;
-}
-
-.c49 {
-  /* ١ */
-  text-align: left;
-}
-.c49 b,
-.c49 > span {
-  margin-left: 10px !important;
-}
-.c49 span.ar {
-  pointer-events: none;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -20px;
-  right: -18px;
-}
-
-.c50 {
-  /* ٢ */
-  text-align: left;
-}
-.c50 b,
-.c50 > span {
-  margin-left: 10px !important;
-}
-.c50 span.ar {
-  pointer-events: none;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -20px;
-  right: -18px;
-}
-
-.c51 {
-  /* ٣ */
-  text-align: left;
-}
-.c51 b,
-.c51 > span {
-  margin-left: 10px !important;
-}
-.c51 span.ar {
-  pointer-events: none;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -20px;
-  right: -18px;
-}
-
-.c52 {
-  /* ٤ */
-  text-align: left;
-}
-.c52 b,
-.c52 > span {
-  margin-left: 10px !important;
-}
-.c52 span.ar {
-  pointer-events: none;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -20px;
-  right: -18px;
-}
-
-.c53 {
-  /* ٥ */
-  text-align: left;
-}
-.c53 b,
-.c53 > span {
-  margin-left: 10px !important;
-}
-.c53 span.ar {
-  pointer-events: none;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -20px;
-  right: -18px;
-}
-
-.c54 {
-  /* ٦ */
-  text-align: left;
-}
-.c54 b,
-.c54 > span {
-  margin-left: 10px !important;
-}
-.c54 span.ar {
-  pointer-events: none;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -20px;
-  right: -18px;
-}
-
-.c55 {
-  /* ٧ */
-  text-align: left;
-}
-.c55 b,
-.c55 > span {
-  margin-left: 10px !important;
-}
-.c55 span.ar {
-  pointer-events: none;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -20px;
-  right: -18px;
-}
-
-.c56 {
-  /* ٨ */
-  text-align: left;
-}
-.c56 b,
-.c56 > span {
-  margin-left: 10px !important;
-}
-.c56 span.ar {
-  pointer-events: none;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -20px;
-  right: -18px;
-}
-
-.c57 {
-  /* ٩ */
-  text-align: left;
-}
-.c57 b,
-.c57 > span {
-  margin-left: 10px !important;
-}
-.c57 span.ar {
-  pointer-events: none;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -20px;
-  right: -18px;
-}
-
-.c48 {
-  /* ٠ */
-  text-align: left;
-}
-.c48 b,
-.c48 > span {
-  margin-left: 10px !important;
-}
-.c48 span.ar {
-  pointer-events: none;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -20px;
-  right: -18px;
-}
-
-/* QWERTY */
-
-.c81.key span.ar {
-  pointer-events: none;
-  text-shadow: initial;
-  pointer-events: none;
-  color: var(--main-color);
-  top: -8px;
-  right: -6px;
-}
-
-.c81.key span.weak { pointer-events: none;
-  position: relative;
-  pointer-events: none;
-  text-shadow: initial;
-  color: rgba(128, 128, 128, 0.38);
-  top: -47px !important;
-  right: -25px;
-  font-size: 2rem;
-}
-
-.c81.key span.vowel { pointer-events: none;
-  position: relative;
-  pointer-events: none;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -96px !important;
-  right: -25px;
-  font-size: 2rem;
-}
-
-.c87.key span.ar {
-  pointer-events: none;
-  /* ص */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -8px;
-  right: -6px;
-}
-
-.c87.key span.weak { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: rgba(128, 128, 128, 0.38);
-  top: -46px !important;
-  right: -25px;
-  font-size: 2rem;
-}
-
-.c87.key span.vowel { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -95px !important;
-  right: -25px;
-  font-size: 2rem;
-}
-
-.c69.key span.ar {
-  pointer-events: none;
-  /* ث */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -4px;
-  right: -9px;
-}
-.c69.key span.weak { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: rgba(128, 128, 128, 0.38);
-  top: -45px !important;
-  right: -25px;
-  font-size: 2rem;
-  font-family: 'Noto Naskh Arabic';
-
-}
-
-.c69.key span.vowel { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -94px !important;
-  right: -25px;
-  font-size: 2rem;
-  font-family: 'Noto Naskh Arabic';
-
-}
-
-.c82.key span.ar {
-  pointer-events: none;
-  /* ق */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -8px;
-  right: -9px;
-}
-.c82.key span.weak { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: rgba(128, 128, 128, 0.38);
-  top: -45px !important;
-  right: -25px;
-  font-size: 2rem;
-}
-
-.c82.key span.vowel { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -94px !important;
-  right: -24px;
-  font-size: 2rem;
-}
-.c84.key span.ar {
-  pointer-events: none;
-  /* ف */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -3px;
-  right: -8px;
-}
-.c84.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -56px !important;
-  right: -24px;
-  font-size: 1rem;
-}
-
-.c89.key span.ar {
-  pointer-events: none;
-  /* غ */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -8px;
-  right: -10px;
-}
-.c89.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -56px !important;
-  right: -28px;
-  font-size: 1rem;
-}
-
-.c85.key span.ar {
-  pointer-events: none;
-  /* ع */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -8px;
-  right: -10px;
-}
-
-.c85.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -52px !important;
-  right: -24px;
-  font-size: 1rem;
-}
-
-.c73.key span.ar {
-  pointer-events: none;
-  /* ھ */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -5px;
-  right: -10px;
-}
-.c73.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -55px !important;
-  right: -20px;
-  font-size: 0.9rem;
-}
-.c79.key span.ar {
-  pointer-events: none;
-  /* خ */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -9px;
-  right: -10px;
-}
-.c79.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -55px !important;
-  right: -22px;
-  font-size: 0.9rem;
-}
-
-.c80.key span.ar {
-  pointer-events: none;
-  /* ح */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -9px;
-  right: -10px;
-}
-
-.c80.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -55px !important;
-  right: -26px;
-  font-size: 1rem;
-}
-
-.c219.key span.ar {
-  pointer-events: none;
-  /* ج */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -24px;
-  right: -14px;
-}
-.c219.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -69px !important;
-  right: -20px;
-  font-size: 0.85rem;
-}
-
-.c221.key span.ar {
-  pointer-events: none;
-  /* د */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -19px;
-  right: -16px;
-}
-.c221.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -69px !important;
-  right: -20px;
-  font-size: 0.85rem;
-}
-
-/* ASDFG */
-
-.c65.key span.ar {
-  pointer-events: none;
-  /* ش */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -8px;
-  right: -6px;
-}
-
-.c65.key span.weak { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: rgba(128, 128, 128, 0.38);
-  top: -52px !important;
-  right: -25px;
-  font-size: 2rem;
-}
-
-.c65.key span.vowel { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -118px !important;
-  right: -25px;
-  font-size: 2rem;
-}
-
-.c83.key span.ar {
-  pointer-events: none;
-  /* س */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -8px;
-  right: -6px;
-}
-
-.c83.key span.weak { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: rgba(128, 128, 128, 0.38);
-  top: -52px !important;
-  right: -25px;
-  font-size: 2rem;
-}
-
-.c83.key span.vowel { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -118px !important;
-  right: -26px;
-  font-size: 2rem;
-}
-
-.c68.key span.ar {
-  pointer-events: none;
-  /* ي */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -10px;
-  right: -10px;
-}
-.c68.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -54px !important;
-  right: -27px;
-  font-size: 0.8rem;
-}
-
-.c70.key span.ar {
-  pointer-events: none;
-  /* ب */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -6px;
-  right: -9px;
-}
-.c70.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -54px !important;
-  right: -27px;
-  font-size: 0.8rem;
-}
-
-.c71.key span.ar {
-  pointer-events: none;
-  /* ل */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -7px;
-  right: -10px;
-}
-.c71.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -53px !important;
-  right: -25px;
-  font-size: 0.9rem;
-}
-
-.c72.key span.ar {
-  pointer-events: none;
-  /* ا */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -3px;
-  right: -14px;
-}
-.c72.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -50px !important;
-  right: -28px;
-  font-size: 0.9rem;
-}
-
-.c74.key span.ar {
-  pointer-events: none;
-  /* ت */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -3px;
-  right: -9px;
-}
-.c74.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -55px !important;
-  right: -28px;
-  font-size: 0.9rem;
-}
-
-.c75.key span.ar {
-  pointer-events: none;
-  /* ن */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -8px;
-  right: -9px;
-}
-.c75.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -58px !important;
-  right: -28px;
-  font-size: 0.9rem;
-}
-
-.c76.key span.ar {
-  pointer-events: none;
-  /* م */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -9px;
-  right: -13px;
-}
-.c76.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -55px !important;
-  right: -26px;
-  font-size: 0.9rem;
-}
-
-.c186.key span.ar {
-  pointer-events: none;
-  /* ك */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -16px;
-  right: -13px;
-}
-
-.c222.key span.ar {
-  pointer-events: none;
-  /* ط */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -16px;
-  right: -11px;
-}
-
-.c90.key span.ar {
-  pointer-events: none;
-  /* ئ */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -9px;
-  right: -10px;
-}
-
-.c90.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -55px !important;
-  right: -22px;
-  font-size: 0.9rem;
-}
-
-.c88.key span.ar {
-  pointer-events: none;
-  /* ء */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -6px;
-  right: -12px;
-}
-
-.c88.key span.weak { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: rgba(128, 128, 128, 0.38);
-  top: -44px !important;
-  right: -25px;
-  font-size: 2rem;
-}
-
-.c88.key span.vowel { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -94px !important;
-  right: -25px;
-  font-size: 2rem;
-}
-
-.c67.key span.ar {
-  pointer-events: none;
-  /* ؤ */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -8px;
-  right: -12px;
-}
-
-.c67.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -55px !important;
-  right: -26px;
-  font-size: 0.8rem;
-}
-
-.c86.key span.ar {
-  pointer-events: none;
-  /* ر */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -8px;
-  right: -14px;
-}
-
-.c86.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -55px !important;
-  right: -26px;
-  font-size: 0.8rem;
-}
-
-.c66.key span.ar {
-  pointer-events: none;
-  /* ﻻ */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -5px;
-  right: -12px;
-}
-
-.c66.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -53px !important;
-  right: -24px;
-  font-size: 0.9rem;
-}
-
-.c78.key span.ar {
-  pointer-events: none;
-  /* ى */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -8px;
-  right: -11px;
-}
-
-.c78.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -53px !important;
-  right: -28px;
-  font-size: 0.9rem;
-}
-
-.c77.key span.ar {
-  pointer-events: none;
-  /* ة */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -5px;
-  right: -12px;
-}
-
-.c77.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -53px !important;
-  right: -28px;
-  font-size: 0.9rem;
-}
-
-.c188.key span.ar {
-  pointer-events: none;
-  /* و */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -19px;
-  right: -13px;
-}
-
-.c190.key span.ar {
-  pointer-events: none;
-  /* ز */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -19px;
-  right: -15px;
-}
-
-.c191.key span.ar {
-  pointer-events: none;
-  /* ظ */
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -15px;
-  right: -12px;
-}
-
-.c191.key span.second { pointer-events: none;
-  position: relative;
-  text-shadow: initial;
-  color: var(--main-color);
-  top: -63px !important;
-  right: -25px;
-  font-size: 0.9rem;
-}
+/* MY ADDITIONS */
 
 #bottomrow {
   display: flex;

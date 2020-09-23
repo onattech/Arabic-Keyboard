@@ -11,22 +11,6 @@
     <h2>Arabic Keyboard</h2>
     <div id="text" contentEditable="true" oninput="handleChange()"></div>
     <div id="keyboard" onclick="handleChange()">
-        <!-- <ul>
-            <li><a href="#" class="key c27 fn"><span id="esc">esc</span></a></li>
-            <li><a href="#" class="key c112 fn"><span>F1</span></a></li>
-            <li><a href="#" class="key c113 fn"><span>F2</span></a></li>
-            <li><a href="#" class="key c114 fn"><span>F3</span></a></li>
-            <li><a href="#" class="key c115 fn"><span>F4</span></a></li>
-            <li><a href="#" class="key c116 fn"><span>F5</span></a></li>
-            <li><a href="#" class="key c117 fn"><span>F6</span></a></li>
-            <li><a href="#" class="key c118 fn"><span>F7</span></a></li>
-            <li><a href="#" class="key c119 fn"><span>F8</span></a></li>
-            <li><a href="#" class="key c120 fn"><span>F9</span></a></li>
-            <li><a href="#" class="key c121 fn"><span>F10</span></a></li>
-            <li><a href="#" class="key c122 fn"><span>F11</span></a></li>
-            <li><a href="#" class="key c123 fn"><span>F12</span></a></li>
-            <li><a href="#" class="key fn"><span>Eject</span></a></li>
-        </ul> -->
         <ul id="numbers">
             <li><a href="#" class="key c192" onclick="add('ذ')"><img src="PNG/TILDA.png" alt="tilda"></a></li>
             <li><a href="#" class="key c49"  onclick="add('١')"><img src="PNG/1.png" alt="1"></a></li>
@@ -41,7 +25,7 @@
             <li><a href="#" class="key c48"  onclick="add('٠')"><img src="PNG/0.png" alt="0"></a></li>
             <li><a href="#" class="key c189 alt"><b>_</b><span>-</span></a></li>
             <li><a href="#" class="key c187"><b>+</b><span>=</span></a></li>
-            <li><a href="#" class="key c46" id="delete"><span>Delete</span></a></li>
+            <li><a href="#" class="key c46" id="delete"><span>Backspace</span></a></li>
         </ul>
         <ul id="qwerty">
             <li><a href="#" class="key c9" id="tab"><span>tab</span></a></li>
@@ -52,7 +36,7 @@
             <li><a href="#" class="key c84" onclick="add('ف')"><img src="PNG/T.png" alt="t"></a></li>
             <li><a href="#" class="key c89" onclick="add('غ')"><img src="PNG/Y.png" alt="y"></a></li>
             <li><a href="#" class="key c85" onclick="add('ع')"><img src="PNG/U.png" alt="u"></a></li>
-            <li><a href="#" class="key c73" onclick="add('ھ')"><img src="PNG/I.png" alt="i"></a></li>
+            <li><a href="#" class="key c73" onclick="add('ه')"><img src="PNG/I.png" alt="i"></a></li>
             <li><a href="#" class="key c79" onclick="add('خ')"><img src="PNG/O.png" alt="o"></a></li>
             <li><a href="#" class="key c80" onclick="add('ح')"><img src="PNG/P.png" alt="p"></a></li>
             <li><a href="#" class="key c219 alt" onclick="add('ج')"><img src="PNG/[.png" alt="["></a></li>
@@ -89,21 +73,7 @@
             <li><a href="#" class="key c16 shiftright"><span>Shift</span></a></li>
         </ul>
         <ul id="bottomrow">
-            <!-- <li><a href="#" class="key" id="fn"><span>fn</span></a></li>
-            <li><a href="#" class="key c17" id="control"><span>control</span></a></li>
-            <li><a href="#" class="key option" id="optionleft"><span>option</span></a></li>
-            <li><a href="#" class="key command" id="commandleft"><span>command</span></a></li> -->
             <li><a href="#" class="key c32" id="spacebar" onclick="add(' ')"></a></li>
-            <!-- <li><a href="#" class="key command" id="commandright"><span>command</span></a></li>
-            <li><a href="#" class="key option" id="optionright"><span>option</span></a></li>
-            <ol>
-                <li><a href="#" class="key c37" id="left"><span>◀</span></a></li>
-                <li>
-                    <a href="#" class="key c38" id="up"><span>▲</span></a>
-                    <a href="#" class="key c40" id="down"><span>▼</span></a>
-                </li>
-                <li><a href="#" class="key c39" id="right"><span>▶</span></a></li>
-            </ol> -->
         </ul>
     </div>
 </body>
