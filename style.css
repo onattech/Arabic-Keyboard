@@ -1187,3 +1187,13 @@ ul ol {
 span.weak {
 	pointer-events: none;
 }
+
+img {
+  height:100%;
+  margin: auto;
+}
+
+a {
+  /* display:flex !important; */
+  align-items: center;
+}
