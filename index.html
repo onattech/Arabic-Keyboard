@@ -9,72 +9,85 @@
 </head>
 <body>
     <h2>Arabic Keyboard</h2>
-    <div id="text" contentEditable="true" oninput="handleChange()"></div>
+    <input id="text"  oninput="handleChange()"></div>
     <div id="keyboard" onclick="handleChange()">
         <ul id="numbers">
-            <li><a href="#" class="key c192" onclick="add('ذ')"><img src="PNG/TILDA.png" alt="tilda"></a></li>
-            <li><a href="#" class="key c49"  onclick="add('١')"><img src="PNG/1.png" alt="1"></a></li>
-            <li><a href="#" class="key c50"  onclick="add('٢')"><img src="PNG/2.png" alt="2"></a></li>
-            <li><a href="#" class="key c51"  onclick="add('٣')"><img src="PNG/3.png" alt="3"></a></li>
-            <li><a href="#" class="key c52"  onclick="add('٤')"><img src="PNG/4.png" alt="4"></a></li>
-            <li><a href="#" class="key c53"  onclick="add('٥')"><img src="PNG/5.png" alt="5"></a></li>
-            <li><a href="#" class="key c54"  onclick="add('٦')"><img src="PNG/6.png" alt="6"></a></li>
-            <li><a href="#" class="key c55"  onclick="add('٧')"><img src="PNG/7.png" alt="7"></a></li>
-            <li><a href="#" class="key c56"  onclick="add('٨')"><img src="PNG/8.png" alt="8"></a></li>
-            <li><a href="#" class="key c57"  onclick="add('٩')"><img src="PNG/9.png" alt="9"></a></li>
-            <li><a href="#" class="key c48"  onclick="add('٠')"><img src="PNG/0.png" alt="0"></a></li>
-            <li><a href="#" class="key c189 alt"><b>_</b><span>-</span></a></li>
-            <li><a href="#" class="key c187"><b>+</b><span>=</span></a></li>
-            <li><a href="#" class="key c46" id="delete"><span>Backspace</span></a></li>
+            <li><a href="#" class="key c192"ondragstart="return false;" onclick="add('ذ')"><img src="PNG/TILDA.png" alt="tilda"></a></li>
+            <li><a href="#" class="key c49" ondragstart="return false;" onclick="add('١')"><img src="PNG/1.png" alt="1"></a></li>
+            <li><a href="#" class="key c50" ondragstart="return false;" onclick="add('٢')"><img src="PNG/2.png" alt="2"></a></li>
+            <li><a href="#" class="key c51" ondragstart="return false;" onclick="add('٣')"><img src="PNG/3.png" alt="3"></a></li>
+            <li><a href="#" class="key c52" ondragstart="return false;" onclick="add('٤')"><img src="PNG/4.png" alt="4"></a></li>
+            <li><a href="#" class="key c53" ondragstart="return false;" onclick="add('٥')"><img src="PNG/5.png" alt="5"></a></li>
+            <li><a href="#" class="key c54" ondragstart="return false;" onclick="add('٦')"><img src="PNG/6.png" alt="6"></a></li>
+            <li><a href="#" class="key c55" ondragstart="return false;" onclick="add('٧')"><img src="PNG/7.png" alt="7"></a></li>
+            <li><a href="#" class="key c56" ondragstart="return false;" onclick="add('٨')"><img src="PNG/8.png" alt="8"></a></li>
+            <li><a href="#" class="key c57" ondragstart="return false;" onclick="add('٩')"><img src="PNG/9.png" alt="9"></a></li>
+            <li><a href="#" class="key c48" ondragstart="return false;" onclick="add('٠')"><img src="PNG/0.png" alt="0"></a></li>
+            <li><a href="#" class="key c189 alt" ondragstart="return false;" onclick="add('-')"><b>_</b><span>-</span></a></li>
+            <li><a href="#" class="key c187" ondragstart="return false;" onclick="add('=')"><b>+</b><span>=</span></a></li>
+            <li><a href="#" class="key c46" id="delete" ondragstart="return false;" onclick="backspace()"><span>Backspace</span></a></li>
         </ul>
         <ul id="qwerty">
-            <li><a href="#" class="key c9" id="tab"><span>tab</span></a></li>
-            <li><a href="#" class="key c81" onclick="add('ض')"><img src="PNG/Q.png" alt="q"></a></li>
-            <li><a href="#" class="key c87" onclick="add('ص')"><img src="PNG/W.png" alt="w"></a></li>
-            <li><a href="#" class="key c69" onclick="add('ث')"><img src="PNG/E.png" alt="e"></a></li>
-            <li><a href="#" class="key c82" onclick="add('ق')"><img src="PNG/R.png" alt="r"></a></li>
-            <li><a href="#" class="key c84" onclick="add('ف')"><img src="PNG/T.png" alt="t"></a></li>
-            <li><a href="#" class="key c89" onclick="add('غ')"><img src="PNG/Y.png" alt="y"></a></li>
-            <li><a href="#" class="key c85" onclick="add('ع')"><img src="PNG/U.png" alt="u"></a></li>
-            <li><a href="#" class="key c73" onclick="add('ه')"><img src="PNG/I.png" alt="i"></a></li>
-            <li><a href="#" class="key c79" onclick="add('خ')"><img src="PNG/O.png" alt="o"></a></li>
-            <li><a href="#" class="key c80" onclick="add('ح')"><img src="PNG/P.png" alt="p"></a></li>
-            <li><a href="#" class="key c219 alt" onclick="add('ج')"><img src="PNG/[.png" alt="["></a></li>
-            <li><a href="#" class="key c221 alt" onclick="add('د')"><img src="PNG/].png" alt="]"></a></li>
-            <li><a href="#" class="key c220 alt"><b>|</b><span>\</span></a></li>
+            <li><a href="#" class="key c9" id="tab" ondragstart="return false;"><span>tab</span></a></li>
+            <li><a href="#" class="key c81" ondragstart="return false;" onclick="add('ض')"><img src="PNG/Q.png" alt="q"></a></li>
+            <li><a href="#" class="key c87" ondragstart="return false;" onclick="add('ص')"><img src="PNG/W.png" alt="w"></a></li>
+            <li><a href="#" class="key c69" ondragstart="return false;" onclick="add('ث')"><img src="PNG/E.png" alt="e"></a></li>
+            <li><a href="#" class="key c82" ondragstart="return false;" onclick="add('ق')"><img src="PNG/R.png" alt="r"></a></li>
+            <li><a href="#" class="key c84" ondragstart="return false;" onclick="add('ف')"><img src="PNG/T.png" alt="t"></a></li>
+            <li><a href="#" class="key c89" ondragstart="return false;" onclick="add('غ')"><img src="PNG/Y.png" alt="y"></a></li>
+            <li><a href="#" class="key c85" ondragstart="return false;" onclick="add('ع')"><img src="PNG/U.png" alt="u"></a></li>
+            <li><a href="#" class="key c73" ondragstart="return false;" onclick="add('ه')"><img src="PNG/I.png" alt="i"></a></li>
+            <li><a href="#" class="key c79" ondragstart="return false;" onclick="add('خ')"><img src="PNG/O.png" alt="o"></a></li>
+            <li><a href="#" class="key c80" ondragstart="return false;" onclick="add('ح')"><img src="PNG/P.png" alt="p"></a></li>
+            <li><a href="#" class="key c219 alt" ondragstart="return false;" onclick="add('ج')"><img src="PNG/[.png" alt="["></a></li>
+            <li><a href="#" class="key c221 alt" ondragstart="return false;" onclick="add('د')"><img src="PNG/].png" alt="]"></a></li>
+            <li><a href="#" class="key c220 alt" ondragstart="return false;" onclick="add('\\')"><b>|</b><span>\</span></a></li>
         </ul>
         <ul id="asdfg">
-            <li><a href="#" class="key c20 alt" id="caps"><b></b><span>caps lock</span></a></li>
-            <li><a href="#" class="key c65" onclick="add('ش')"><img src="PNG/A.png" alt="a"></a></li>
-            <li><a href="#" class="key c83" onclick="add('س')"><img src="PNG/S.png" alt="s"></a></li>
-            <li><a href="#" class="key c68" onclick="add('ي')"><img src="PNG/D.png" alt="d"></a></li>
-            <li><a href="#" class="key c70" onclick="add('ب')"><img src="PNG/F.png" alt="f"></a></li>
-            <li><a href="#" class="key c71" onclick="add('ل')"><img src="PNG/G.png" alt="g"></a></li>
-            <li><a href="#" class="key c72" onclick="add('ا')"><img src="PNG/H.png" alt="h"></a></li>
-            <li><a href="#" class="key c74" onclick="add('ت')"><img src="PNG/J.png" alt="j"></a></li>
-            <li><a href="#" class="key c75" onclick="add('ن')"><img src="PNG/K.png" alt="k"></a></li>
-            <li><a href="#" class="key c76" onclick="add('م')"><img src="PNG/L.png" alt="l"></a></li>
-            <li><a href="#" class="key c186 alt" onclick="add('ك')"><img src="PNG/;.png" alt=";"></a></li>
-            <li><a href="#" class="key c222 alt" onclick="add('ط')"><img src="PNG/'.png" alt="'"></a></li>
-            <li><a href="#" class="key c13 alt" id="enter"><span>return</span></a></li>
+            <li><a href="#" class="key c20 alt" id="caps" ondragstart="return false;"><b></b><span>caps lock</span></a></li>
+            <li><a href="#" class="key c65" ondragstart="return false;" onclick="add('ش')"><img src="PNG/A.png" alt="a"></a></li>
+            <li><a href="#" class="key c83" ondragstart="return false;" onclick="add('س')"><img src="PNG/S.png" alt="s"></a></li>
+            <li><a href="#" class="key c68" ondragstart="return false;" onclick="add('ي')"><img src="PNG/D.png" alt="d"></a></li>
+            <li><a href="#" class="key c70" ondragstart="return false;" onclick="add('ب')"><img src="PNG/F.png" alt="f"></a></li>
+            <li><a href="#" class="key c71" ondragstart="return false;" onclick="add('ل')"><img src="PNG/G.png" alt="g"></a></li>
+            <li><a href="#" class="key c72" ondragstart="return false;" onclick="add('ا')"><img src="PNG/H.png" alt="h"></a></li>
+            <li><a href="#" class="key c74" ondragstart="return false;" onclick="add('ت')"><img src="PNG/J.png" alt="j"></a></li>
+            <li><a href="#" class="key c75" ondragstart="return false;" onclick="add('ن')"><img src="PNG/K.png" alt="k"></a></li>
+            <li><a href="#" class="key c76" ondragstart="return false;" onclick="add('م')"><img src="PNG/L.png" alt="l"></a></li>
+            <li><a href="#" class="key c186 alt" ondragstart="return false;" onclick="add('ك')"><img src="PNG/;.png" alt=";"></a></li>
+            <li><a href="#" class="key c222 alt" ondragstart="return false;" onclick="add('ط')"><img src="PNG/'.png" alt="'"></a></li>
+            <li><a href="#" class="key c13 alt" ondragstart="return false;" id="enter"><span>return</span></a></li>
         </ul>
         <ul id="zxcvb">
-            <li><a href="#" class="key c16 shiftleft"><span>Shift</span></a></li>
-            <li><a href="#" class="key c90" onclick="add('ئ')"><img src="PNG/Z.png" alt="z"></a></li>
-            <li><a href="#" class="key c88" onclick="add('ء')"><img src="PNG/X.png" alt="x"></a></li>
-            <li><a href="#" class="key c67" onclick="add('ؤ')"><img src="PNG/C.png" alt="c"></a></li>
-            <li><a href="#" class="key c86" onclick="add('ر')"><img src="PNG/V.png" alt="v"></a></li>
-            <li><a href="#" class="key c66" onclick="add('ﻻ')"><img src="PNG/B.png" alt="b"></a></li>
-            <li><a href="#" class="key c78" onclick="add('ى')"><img src="PNG/N.png" alt="n"></a></li>
-            <li><a href="#" class="key c77" onclick="add('ة')"><img src="PNG/M.png" alt="m"></a></li>
-            <li><a href="#" class="key c188 alt" onclick="add('و')"><img src="PNG/,.png" alt=","></a></li>
-            <li><a href="#" class="key c190 alt" onclick="add('ز')"><img src="PNG/DOT.png" alt="dot"></a></li>
-            <li><a href="#" class="key c191 alt" onclick="add('ظ')"><img src="PNG/SLASH.png" alt="slash"></a></li>
-            <li><a href="#" class="key c16 shiftright"><span>Shift</span></a></li>
+            <li><a href="#" class="key c16 shiftleft" ondragstart="return false;"><span>Shift</span></a></li>
+            <li><a href="#" class="key c90" ondragstart="return false;" onclick="add('ئ')"><img src="PNG/Z.png" alt="z"></a></li>
+            <li><a href="#" class="key c88" ondragstart="return false;" onclick="add('ء')"><img src="PNG/X.png" alt="x"></a></li>
+            <li><a href="#" class="key c67" ondragstart="return false;" onclick="add('ؤ')"><img src="PNG/C.png" alt="c"></a></li>
+            <li><a href="#" class="key c86" ondragstart="return false;" onclick="add('ر')"><img src="PNG/V.png" alt="v"></a></li>
+            <li><a href="#" class="key c66" ondragstart="return false;" onclick="add('ﻻ')"><img src="PNG/B.png" alt="b"></a></li>
+            <li><a href="#" class="key c78" ondragstart="return false;" onclick="add('ى')"><img src="PNG/N.png" alt="n"></a></li>
+            <li><a href="#" class="key c77" ondragstart="return false;" onclick="add('ة')"><img src="PNG/M.png" alt="m"></a></li>
+            <li><a href="#" class="key c188 alt" ondragstart="return false;" onclick="add('و')"><img src="PNG/,.png" alt=","></a></li>
+            <li><a href="#" class="key c190 alt" ondragstart="return false;" onclick="add('ز')"><img src="PNG/DOT.png" alt="dot"></a></li>
+            <li><a href="#" class="key c191 alt" ondragstart="return false;" onclick="add('ظ')"><img src="PNG/SLASH.png" alt="slash"></a></li>
+            <li><a href="#" class="key c16 shiftright" ondragstart="return false;"><span>Shift</span></a></li>
         </ul>
         <ul id="bottomrow">
-            <li><a href="#" class="key c32" id="spacebar" onclick="add(' ')"></a></li>
+            <li><a href="#" class="key c32" id="spacebar" ondragstart="return false;" onclick="add(' ')"></a></li>
         </ul>
     </div>
+    <script>
+        document.getElementById("keyboard").addEventListener("click", function(event){
+        event.preventDefault()
+        event.stopPropagation();
+        });
+
+        // document.getElementById("text").addEventListener("click", function(event){
+        //     alert(getCaretCharacterOffsetWithin(document.getElementById('text')))
+        // });
+
+
+    </script>
 </body>
 </html>
+
