@@ -15,10 +15,23 @@ let shift = false
   if ((event.code === 'ShiftLeft') || (event.code ==='ShiftRight')){
     event.preventDefault()
     shift = true
+  }  
+  if ((event.code === 'ControlLeft') || (event.code ==='ControlRight')){
+    event.preventDefault()
+    ctrl = true
   }
   if (dict[event.code]){
-    event.preventDefault()
-    shift ? add(dict[event.code][1]) : add(dict[event.code][0])
+    if (ctrl && event.code === 'KeyA'){
+      event.preventDefault()
+      // alert('ctrl')
+      document.getElementById('text').select()
+      document.getElementById('text').setSelectionRange(0,
+        document.getElementById('text').value.length)
+      ctrl = false
+    } else {
+      event.preventDefault()
+      shift ? add(dict[event.code][1]) : add(dict[event.code][0])
+    }
   } 
 }
 )
@@ -27,6 +40,10 @@ document.addEventListener('keyup', (event) => {
   if ((event.code === 'ShiftLeft') || (event.code === 'ShiftRight')){
     // event.preventDefault()
     shift = false
+  }
+  if ((event.code === 'ControlLeft') || (event.code === 'ControlRight')){
+    // event.preventDefault()
+    ctrl = false
   }
 }
 )
@@ -49,7 +66,7 @@ function add(c) {
 function enter () {
   // alert(document.getElementById('text').selectionStart)
   // alert(shift)
-  document.getElementById('first').innerHTML = `Shift is ${shift}`
+  document.getElementById('first').innerHTML = `Shift is ${ctrl}`
 }
 
 function erase() {
