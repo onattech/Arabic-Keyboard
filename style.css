@@ -32,6 +32,12 @@ h2 {
   font-family: 'Noto Naskh Arabic';
   word-wrap: break-word;
   font-size: 1.2rem;
+  background-color: #f8f8f8;
+  border-style: hidden;
+  border-bottom-style: solid;
+}
+#text:focus {
+  outline: none;
 }
 
 #keyboard {
@@ -381,4 +387,27 @@ img {
 a {
   /* display:flex !important; */
   align-items: center;
+}
+
+
+
+
+/* DEBUG */
+.debug{
+  width: 200px;
+  height: 300px;
+  background-color: #ddd;
+  position: absolute;
+  right:200px;
+  top:140px;
+  border: 2px white solid;
+  border-radius: 6px;
+}
+
+.debug p {
+  margin:5px;
+}
+
+.debug h6 {
+  text-align: center;
 }

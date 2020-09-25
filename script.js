@@ -1,10 +1,59 @@
+let ctrl = false
+let shift = false
+    
+  document.addEventListener('keydown', (event) => {
+  // alert(event.code)
+
+  if (event.code == 'Backspace'){
+    event.preventDefault()
+    backspace()
+  }
+  if (event.code == 'Space'){
+    event.preventDefault()
+    add(' ')
+  }
+  if ((event.code === 'ShiftLeft') || (event.code ==='ShiftRight')){
+    event.preventDefault()
+    shift = true
+  }
+  if (dict[event.code]){
+    event.preventDefault()
+    shift ? add(dict[event.code][1]) : add(dict[event.code][0])
+  } 
+}
+)
+
+document.addEventListener('keyup', (event) => {
+  if ((event.code === 'ShiftLeft') || (event.code === 'ShiftRight')){
+    // event.preventDefault()
+    shift = false
+  }
+}
+)
+
 function handleChange() {
   window.scrollTo(0, document.body.scrollHeight)
 }
 
 function add(c) {
-  console.log(document.getElementById('text').textContent)
-  document.getElementById('text').value += c
+  console.log(c);
+  let textbox = document.getElementById('text')
+  let n = textbox.selectionStart
+  let updatedValue = textbox.value.slice(0,n) + c +  textbox.value.slice(n ) 
+  document.getElementById('text').value = updatedValue
+  textbox.focus();
+  textbox.selectionStart = n + 1;
+  textbox.selectionEnd = n + 1;
+}
+
+function enter () {
+  // alert(document.getElementById('text').selectionStart)
+  // alert(shift)
+  document.getElementById('first').innerHTML = `Shift is ${shift}`
+}
+
+function erase() {
+  document.getElementById('text').value = ''
 }
 
 function backspace() {
@@ -13,25 +62,34 @@ function backspace() {
   var ss = textbox.selectionStart;
   var se = textbox.selectionEnd;
   var ln  = textbox.value.length;
+  document.getElementById('first').innerHTML  = `Selection Start  ${ss}`
+  document.getElementById('second').innerHTML = `Selection End    ${se}`
+  document.getElementById('third').innerHTML  = `Selection Length ${ln}`
   
   var textbefore = textbox.value.substring( 0, ss );    //text in front of selected text
   var textselected = textbox.value.substring( ss, se ); //selected text
   var textafter = textbox.value.substring( se, ln );    //text following selected text
   
+  
   if(ss==se) // if no text is selected
   {
-  textbox.value = textbox.value.substring(0, ss-1 ) + textbox.value.substring(se, ln );
-  textbox.focus();
-  textbox.selectionStart = ss-1;
-  textbox.selectionEnd = ss-1;
+    // alert('no text')
+    document.getElementById('sixth').innerHTML  = `1 ${textbox.value.substring(0, ss-1 )}`
+    textbox.value = textbox.value.substring(0, ss-1 ) + textbox.value.substring(se, ln );
+    textbox.focus();
+    textbox.selectionStart = ss-1;
+    textbox.selectionEnd = ss-1;
   }
   else // if some text is selected
   {
-  textbox.value = textbefore + textafter ;
-  textbox.focus();
-  textbox.selectionStart = ss;
-  textbox.selectionEnd = ss;
+    // alert('text')
+    textbox.value = textbefore + textafter ;
+    textbox.focus();
+    textbox.selectionStart = ss;
+    textbox.selectionEnd = ss;
   }
+  document.getElementById('fourth').innerHTML  = `textbefore  ${textbefore}`
+  document.getElementById('fifth').innerHTML  = `textafter  ${textafter}`
 }
 
 // function getCaretCharacterOffsetWithin(element) {
@@ -57,3 +115,72 @@ function backspace() {
 //   }
 //   return caretOffset
 // }
+
+
+let dict = {
+  'Backquote': 'ذ',
+  'Digit1': '١',
+  'Digit2': '٢',
+  'Digit3': '٣',
+  'Digit4': '٤',
+  'Digit5': '٥',
+  'Digit6': '٦',
+  'Digit7': '٧',
+  'Digit8': '٨',
+  'Digit9': '٩',
+  'Digit0': '٠',
+  'Minus': '-',
+  'Equal': '=',
+  // 'Backspace': '0',
+  'KeyQ': ['ض', 'َ'],
+  'KeyW': 'ص',
+  'KeyE': 'ث',
+  'KeyR': 'ق',
+  'KeyT': ['ف' , 'ﻹ'],
+  'KeyY': 'غ',
+  'KeyU': 'ع',
+  'KeyI': 'ه',
+  'KeyO': 'خ',
+  'KeyP': 'ح',
+  'BracketLeft': 'ج',
+  'BracketRight': 'د',
+  'Backslash': '\\',
+  'KeyA': 'ش',
+  'KeyS': 'س',
+  'KeyD': 'ي',
+  'KeyF': 'ب',
+  'KeyG': 'ل',
+  'KeyH': 'ا',
+  'KeyJ': 'ت',
+  'KeyK': 'ن',
+  'KeyL': 'م',
+  'Semicolon': 'ك',
+  'Quote': 'ط',
+  'KeyZ': 'ئ',
+  'KeyX': 'ء',
+  'KeyC': 'ؤ',
+  'KeyV': 'ر',
+  'KeyB': 'ﻻ',
+  'KeyN': 'ى',
+  'KeyM': 'ة',
+  'Comma': 'و',
+  'Period': 'ز',
+  'Slash': 'ظ',
+  'Space': ' ',
+  'Numpad0': '0',
+  'Numpad1': '1',
+  'Numpad2': '2',
+  'Numpad3': '3',
+  'Numpad4': '4',
+  'Numpad5': '5',
+  'Numpad6': '6',
+  'Numpad7': '7',
+  'Numpad8': '8',
+  'Numpad9': '9',
+  'NumpadDivide': '/',
+  'NumpadMultiply': '*',
+  'NumpadSubtract': '-',
+  'NumpadAdd': '+',
+  'NumpadDecimal': '.',
+}
+

@@ -56,7 +56,7 @@
             <li><a href="#" class="key c76" ondragstart="return false;" onclick="add('م')"><img src="PNG/L.png" alt="l"></a></li>
             <li><a href="#" class="key c186 alt" ondragstart="return false;" onclick="add('ك')"><img src="PNG/;.png" alt=";"></a></li>
             <li><a href="#" class="key c222 alt" ondragstart="return false;" onclick="add('ط')"><img src="PNG/'.png" alt="'"></a></li>
-            <li><a href="#" class="key c13 alt" ondragstart="return false;" id="enter"><span>return</span></a></li>
+            <li><a href="#" class="key c13 alt" ondragstart="return false;" id="enter" onclick="enter()"><span>return</span></a></li>
         </ul>
         <ul id="zxcvb">
             <li><a href="#" class="key c16 shiftleft" ondragstart="return false;"><span>Shift</span></a></li>
@@ -74,18 +74,24 @@
         </ul>
         <ul id="bottomrow">
             <li><a href="#" class="key c32" id="spacebar" ondragstart="return false;" onclick="add(' ')"></a></li>
+            <li><a href="#" class="key" id="erase" ondragstart="return false;" onclick="erase()">erase</a></li>
         </ul>
     </div>
+    <div class="debug">
+        <h6>Debug</h6>
+        <p id="first" ></p>
+        <p id="second"></p>
+        <p id="third" ></p>
+        <p id="fourth" ></p>
+        <p id="fifth" ></p>
+        <p id="sixth" ></p>
+    </div>
     <script>
+        // Prevents shift+key to open a new browser
         document.getElementById("keyboard").addEventListener("click", function(event){
         event.preventDefault()
         event.stopPropagation();
-        });
-
-        // document.getElementById("text").addEventListener("click", function(event){
-        //     alert(getCaretCharacterOffsetWithin(document.getElementById('text')))
-        // });
-
+        })
 
     </script>
 </body>
