@@ -8,10 +8,6 @@ let shift = false
     event.preventDefault()
     backspace()
   }
-  if (event.code == 'Space'){
-    event.preventDefault()
-    add(' ')
-  }
   if ((event.code === 'ShiftLeft') || (event.code ==='ShiftRight')){
     event.preventDefault()
     shift = true
@@ -23,14 +19,12 @@ let shift = false
   if (dict[event.code]){
     if (ctrl && event.code === 'KeyA'){
       event.preventDefault()
-      // alert('ctrl')
-      document.getElementById('text').select()
       document.getElementById('text').setSelectionRange(0,
         document.getElementById('text').value.length)
       ctrl = false
     } else {
       event.preventDefault()
-      shift ? add(dict[event.code][1]) : add(dict[event.code][0])
+      add(event.code)
     }
   } 
 }
@@ -38,11 +32,9 @@ let shift = false
 
 document.addEventListener('keyup', (event) => {
   if ((event.code === 'ShiftLeft') || (event.code === 'ShiftRight')){
-    // event.preventDefault()
     shift = false
   }
   if ((event.code === 'ControlLeft') || (event.code === 'ControlRight')){
-    // event.preventDefault()
     ctrl = false
   }
 }
@@ -54,6 +46,8 @@ function handleChange() {
 
 function add(c) {
   console.log(c);
+  shift ? (c = dict[c][1]) : (c = dict[c][0])
+
   let textbox = document.getElementById('text')
   let n = textbox.selectionStart
   let updatedValue = textbox.value.slice(0,n) + c +  textbox.value.slice(n ) 
@@ -66,7 +60,7 @@ function add(c) {
 function enter () {
   // alert(document.getElementById('text').selectionStart)
   // alert(shift)
-  document.getElementById('first').innerHTML = `Shift is ${ctrl}`
+  document.getElementById('first').innerHTML = `Shift is ${shift}`
 }
 
 function erase() {
@@ -174,8 +168,8 @@ let dict = {
   'Quote':         ['ط', '"'],
   'KeyZ':          ['ئ', '~'],
   'KeyX':          ['ء', 'ْ'],
-  'KeyC':          ['ؤ', '}'],
-  'KeyV':          ['ر', '{'],
+  'KeyC':          ['ؤ', '{'],
+  'KeyV':          ['ر', '}'],
   'KeyB':          ['ﻻ', 'ﻵ'],
   'KeyN':          ['ى', 'آ'],
   'KeyM':          ['ة', '\''],
