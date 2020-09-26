@@ -9,7 +9,7 @@
 </head>
 <body>
     <h2>Arabic Keyboard</h2>
-    <input id="text"  oninput="handleChange()"></div>`
+    <input id="text"  oninput="handleChange()"></div>
     <div id="keyboard" onclick="handleChange()">
         <ul id="numbers">
             <li><a href="#" class="key c192"ondragstart="return false;" onclick="add('Backquote')"><img src="PNG/TILDA.png" alt="tilda"></a></li>
@@ -75,6 +75,7 @@
         <ul id="bottomrow">
             <li><a href="#" class="key c32" id="spacebar" ondragstart="return false;" onclick="add('Space')"></a></li>
             <li><a href="#" class="key" id="erase" ondragstart="return false;" onclick="erase()">erase all</a></li>
+            <li><a href="#" class="key" id="copy" ondragstart="return false;" onclick="copy()">copy all</a></li>
         </ul>
     </div>
     <div class="debug">

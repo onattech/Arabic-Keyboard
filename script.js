@@ -46,6 +46,7 @@ function handleChange() {
 
 function add(c) {
   console.log(c);
+  new Audio(`./Audio/${dict[c][2]}.mp3`).play()
   shift ? (c = dict[c][1]) : (c = dict[c][0])
 
   let textbox = document.getElementById('text')
@@ -65,6 +66,12 @@ function enter () {
 
 function erase() {
   document.getElementById('text').value = ''
+}
+
+function copy() {
+  // document.getElementById('text').setSelectionRange(0,document.getElementById('text').value.length)
+  document.getElementById('text').setSelectionRange(0,5)
+  document.getElementById('text').select()
 }
 
 function backspace() {
@@ -142,40 +149,40 @@ let dict = {
   'Digit0':        ['٠', '0'],
   'Minus':         ['-', '_'],
   'Equal':         ['=', '+'],
-  'KeyQ':          ['ض', 'َ'],
-  'KeyW':          ['ص', 'ً'],
-  'KeyE':          ['ث', 'ُ'],
-  'KeyR':          ['ق', 'ٌ'],
-  'KeyT':          ['ف' ,'ﻹ'],
-  'KeyY':          ['غ', 'إ'],
-  'KeyU':          ['ع', '`'],
-  'KeyI':          ['ه', '÷'],
-  'KeyO':          ['خ', '×'],
-  'KeyP':          ['ح', '؛'],
-  'BracketLeft':   ['ج', '<'],
-  'BracketRight':  ['د', '>'],
+  'KeyQ':          ['ض', 'َ', 'Q'],
+  'KeyW':          ['ص', 'ً' , 'W' ],
+  'KeyE':          ['ث', 'ُ' , 'E' ],
+  'KeyR':          ['ق', 'ٌ' , 'R' ],
+  'KeyT':          ['ف' ,'ﻹ', 'T' ],
+  'KeyY':          ['غ', 'إ', 'Y' ],
+  'KeyU':          ['ع', '`', 'U' ],
+  'KeyI':          ['ه', '÷', 'I' ],
+  'KeyO':          ['خ', '×', 'O' ],
+  'KeyP':          ['ح', '؛', 'P' ],
+  'BracketLeft':   ['ج', '<', '[' ],
+  'BracketRight':  ['د', '>', ']' ],
   'Backslash':     ['\\','|'],
-  'KeyA':          ['ش', 'ِ'],
-  'KeyS':          ['س', 'ٍ'],
-  'KeyD':          ['ي', ']'],
-  'KeyF':          ['ب', '['],
-  'KeyG':          ['ل', 'ﻷ'],
-  'KeyH':          ['ا', 'أ'],
-  'KeyJ':          ['ت', 'ـ'],
-  'KeyK':          ['ن', '،'],
-  'KeyL':          ['م', '/'],
-  'Semicolon':     ['ك', ':'],
-  'Quote':         ['ط', '"'],
-  'KeyZ':          ['ئ', '~'],
-  'KeyX':          ['ء', 'ْ'],
-  'KeyC':          ['ؤ', '{'],
-  'KeyV':          ['ر', '}'],
-  'KeyB':          ['ﻻ', 'ﻵ'],
-  'KeyN':          ['ى', 'آ'],
-  'KeyM':          ['ة', '\''],
-  'Comma':         ['و', ','],
-  'Period':        ['ز', '.'],
-  'Slash':         ['ظ', '؟'],
+  'KeyA':          ['ش', 'ِ' , 'A'],
+  'KeyS':          ['س', 'ٍ' , 'S'],
+  'KeyD':          ['ي', ']', 'D'],
+  'KeyF':          ['ب', '[', 'F'],
+  'KeyG':          ['ل', 'ﻷ', 'G'],
+  'KeyH':          ['ا', 'أ', 'H'],
+  'KeyJ':          ['ت', 'ـ', 'J'],
+  'KeyK':          ['ن', '،', 'K'],
+  'KeyL':          ['م', '/', 'L'],
+  'Semicolon':     ['ك', ':', 'Kef'],
+  'Quote':         ['ط', '"', '\''],
+  'KeyZ':          ['ئ', '~' , 'Z'],
+  'KeyX':          ['ء', 'ْ'  , 'X'],
+  'KeyC':          ['ؤ', '{' , 'C'],
+  'KeyV':          ['ر', '}' , 'V'],
+  'KeyB':          ['ﻻ', 'ﻵ' , 'B'],
+  'KeyN':          ['ى', 'آ' , 'N'],
+  'KeyM':          ['ة', '\'', 'M'],
+  'Comma':         ['و', ',' , ','],
+  'Period':        ['ز', '.' , 'Za'],
+  'Slash':         ['ظ', '؟' , 'Dha'],
   'Space':         [' ', ' '],
   'Numpad0':       ['0', '0'],
   'Numpad1':       ['1', '1'],
