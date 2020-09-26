@@ -1,5 +1,6 @@
 let ctrl = false
 let shift = false
+let sound = false
     
   document.addEventListener('keydown', (event) => {
   // alert(event.code)
@@ -10,6 +11,7 @@ let shift = false
   }
   if ((event.code === 'ShiftLeft') || (event.code ==='ShiftRight')){
     event.preventDefault()
+    event.stopPropagation();
     shift = true
   }  
   if ((event.code === 'ControlLeft') || (event.code ==='ControlRight')){
@@ -40,13 +42,17 @@ document.addEventListener('keyup', (event) => {
 }
 )
 
+function soundToggle (){
+  sound = !sound
+}
+
 function handleChange() {
   window.scrollTo(0, document.body.scrollHeight)
 }
 
 function add(c) {
   console.log(c);
-  new Audio(`./Audio/${dict[c][2]}.mp3`).play()
+  sound && !shift && new Audio(`./Audio/${dict[c][2]}.mp3`).play()
   shift ? (c = dict[c][1]) : (c = dict[c][0])
 
   let textbox = document.getElementById('text')
@@ -60,8 +66,7 @@ function add(c) {
 
 function enter () {
   // alert(document.getElementById('text').selectionStart)
-  // alert(shift)
-  document.getElementById('first').innerHTML = `Shift is ${shift}`
+  document.getElementById('first').innerHTML = `Sound is ${sound}`
 }
 
 function erase() {
@@ -201,3 +206,4 @@ let dict = {
   'NumpadDecimal': ['.', '.'],
 }
 
+// Audio source http://arabicquick.com/learn_arabic_alphabet/
