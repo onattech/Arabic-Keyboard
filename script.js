@@ -14,7 +14,7 @@ document.addEventListener('keydown', (event) => {
   }
   if (event.code === 'ControlLeft' || event.code === 'ControlRight') {
     ctrl = true
-  } else if (event.code == 'Backspace') {
+  } else if (event.code === 'Backspace') {
     event.preventDefault()
     backspace()
   } else if (event.code === 'CapsLock'){
@@ -115,7 +115,7 @@ function backspace() {
 function capsToggle() {
   caps = !caps
   console.log(caps)
-  caps ? document.getElementById('light').style.backgroundColor = 'greenyellow,  ':
+  caps ? document.getElementById('light').style.backgroundColor = 'greenyellow':
   document.getElementById('light').style.backgroundColor = '#999'
 }
 
