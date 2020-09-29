@@ -156,7 +156,7 @@ li {
   margin: 0 0 3px;
 }
 
-#numbers li #delete span {
+#numbers li #Backspace span {
   text-align: right;
   margin: 23px 10px 0 0;
   font-size: 7.5pt;
@@ -200,9 +200,10 @@ li {
   display: block;
   margin: 3px 0 0;
 } */
-#asdfg li #caps b {
+#asdfg li #CapsLock b {
   display: block;
   background: #999;
+  background: greenyellow;
   width: 4px;
   height: 4px;
   border-radius: 10px;
@@ -211,12 +212,12 @@ li {
   -moz-box-shadow: inset 0 1px 0 #666;
   box-shadow: inset 0 1px 0 #666;
 }
-#asdfg li #caps span {
+#asdfg li #CapsLock span {
   text-align: left;
   margin: 10px 0 0 10px;
   font-size: 7.5pt;
 }
-#asdfg li #enter span {
+#asdfg li #Enter span {
   text-align: right;
   margin: 23px 10px 0 0;
   font-size: 7.5pt;
@@ -280,16 +281,16 @@ li {
   height: 26px;
   width: 46px;
 } */
-#delete {
+#Backspace {
   width: 72px;
 }
 #tab {
   width: 72px;
 }
-#caps {
+#CapsLock {
   width: 85px;
 }
-#enter {
+#Enter {
   width: 85px;
 }
 .shiftleft,
@@ -300,7 +301,7 @@ li {
 #control,
 .option,
 .command, */
-#spacebar {
+#Space {
   height: 49px;
 }
 
@@ -313,7 +314,7 @@ li {
 .command {
   width: 67px;
 } */
-#spacebar {
+#Space {
   width: 316px;
 }
 

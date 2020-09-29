@@ -5,10 +5,8 @@ let caps = false
 
 // Keydown //
 document.addEventListener('keydown', (event) => {
-  if (event.code == 'Backspace') {
-    event.preventDefault()
-    backspace()
-  }
+  document.getElementById(event.code).classList.add('keydown')
+  
   if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
     event.preventDefault()
     event.stopPropagation()
@@ -35,6 +33,8 @@ document.addEventListener('keydown', (event) => {
 
 // Keyup //
 document.addEventListener('keyup', (event) => {
+  document.getElementById(event.code).classList.toggle('keydown')
+  
   if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
     shift = false
   }
@@ -58,7 +58,7 @@ function add(c) {
   console.log(c)
   sound && !shift && new Audio(`./Audio/${dict[c][2]}.mp3`).play()
   shift || caps ? (c = dict[c][1]) : (c = dict[c][0])
-
+  
   let textbox = document.getElementById('text')
   let n = textbox.selectionStart
   let updatedValue = textbox.value.slice(0, n) + c + textbox.value.slice(n)
@@ -87,16 +87,16 @@ function backspace() {
   var ss = textbox.selectionStart
   var se = textbox.selectionEnd
   var ln = textbox.value.length
-
+  
   var textbefore = textbox.value.substring(0, ss) //text in front of selected text
   var textselected = textbox.value.substring(ss, se) //selected text
   var textafter = textbox.value.substring(se, ln) //text following selected text
-
+  
   if (ss == se) {
     // if no text is selected
     // alert('no text')
     textbox.value =
-      textbox.value.substring(0, ss - 1) + textbox.value.substring(se, ln)
+    textbox.value.substring(0, ss - 1) + textbox.value.substring(se, ln)
     textbox.focus()
     textbox.selectionStart = ss - 1
     textbox.selectionEnd = ss - 1
@@ -109,10 +109,14 @@ function backspace() {
     textbox.selectionEnd = ss
   }
 }
+// document.getElementById('text').style.height = '45px'
+
 
 function capsToggle() {
   caps = !caps
   console.log(caps)
+  caps ? document.getElementById('light').style.backgroundColor = 'greenyellow,  ':
+  document.getElementById('light').style.backgroundColor = '#999'
 }
 
 let dict = {
