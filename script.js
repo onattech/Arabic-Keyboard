@@ -75,6 +75,7 @@ function enter() {
 function erase() {
   document.getElementById('text').value = ''
   document.getElementById('text').style.height = '45px'
+  document.getElementById('text').focus()
 }
 
 function copy() {
@@ -107,7 +108,6 @@ function backspace() {
     textbox.selectionStart = ss
     textbox.selectionEnd = ss
   }
-  textbox.value = ''
 }
 
 function capsToggle() {
