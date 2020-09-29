@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="style.css">
     <title>Arabic Keyboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
 <body>
     <h2>Arabic Keyboard</h2>
-    <input id="text"  oninput="handleChange()"></div>
+    <textarea id="text" class="materialize-textarea" oninput="handleChange()"></textarea>
     <div id="keyboard" onclick="handleChange()">
         <ul id="numbers">
             <li><a class="key c192"ondragstart="return false;" onclick="add('Backquote')"><img src="PNG/TILDA.png" alt="tilda"></a></li>
@@ -45,7 +47,7 @@
             <li><a class="key c220 alt" ondragstart="return false;" onclick="add('Backslash')"><b>|</b><span>\</span></a></li>
         </ul>
         <ul id="asdfg">
-            <li><a class="key c20 alt" id="caps" ondragstart="return false;"><b></b><span>caps lock</span></a></li>
+            <li><a class="key c20 alt" id="caps" ondragstart="return false;" onclick="capsToggle()"><b></b><span>caps lock</span></a></li>
             <li><a class="key c65" ondragstart="return false;" onclick="add('KeyA')"><img src="PNG/A.png" alt="a"></a></li>
             <li><a class="key c83" ondragstart="return false;" onclick="add('KeyS')"><img src="PNG/S.png" alt="s"></a></li>
             <li><a class="key c68" ondragstart="return false;" onclick="add('KeyD')"><img src="PNG/D.png" alt="d"></a></li>
@@ -74,13 +76,13 @@
             <li><a class="key c16 shiftright" ondragstart="return false;"><span>Shift</span></a></li>
         </ul>
         <ul id="bottomrow">
-            <li id="sound">sound<input type="checkbox" onclick="soundToggle()"></li>
+            <li id="ar-sound">sound<input type="checkbox" onclick="soundToggle()"></li>
             <li><a class="key c32" id="spacebar" ondragstart="return false;" onclick="add('Space')"></a></li>
             <li><a class="key" id="erase" ondragstart="return false;" onclick="erase()">erase all</a></li>
             <li><a class="key" id="copy" ondragstart="return false;" onclick="copy()">copy all</a></li>
         </ul>
     </div>
-    <div class="debug">
+    <!-- <div class="debug">
         <h6>Debug</h6>
         <p id="first" ></p>
         <p id="second"></p>
@@ -88,9 +90,12 @@
         <p id="fourth" ></p>
         <p id="fifth" ></p>
         <p id="sixth" ></p>
-    </div>
-    <script>
-    </script>
+    </div> -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+//          $('#textarea1').val('New Text');
+// M.textareaAutoResize($('#textarea1'));
+     </script>
 </body>
 </html>
 
