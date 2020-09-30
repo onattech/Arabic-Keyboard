@@ -13,3 +13,4 @@
 </a> 
 
 ## Arabic Keyboard
+This is an Arabic keyboard which looks good, functions well and not bloated with ads.
