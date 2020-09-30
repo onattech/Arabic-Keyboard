@@ -14,6 +14,7 @@
 
 ## Arabic Keyboard
 This is an Arabic keyboard which looks good, functions well and not bloated with ads.
+https://lokutech.github.io/Arabic-Keyboard/
 
 ### Features
 * Text area auto resizes. No unneeded whitespace. No ads.
