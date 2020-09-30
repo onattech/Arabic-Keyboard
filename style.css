@@ -482,3 +482,75 @@ input:checked[type="checkbox"]:before{
   height:48px;
   width:70px;
 }
+
+/* Github Ribbon */
+.ribbon-wrap {
+  color: #FFFFFF;
+  position: absolute;
+  text-align: center;
+  z-index: 0;
+}
+.ribbon-wrap > span {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+.ribbon-wrap > span:before, .ribbon-wrap > span:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+.ribbon-wrap:before, .ribbon-wrap:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+}
+
+.right-edge.fork {
+  border-radius: 0 5px 0 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  line-height: 40px;
+  right: 0px;
+  top: 20px;
+  width: 120px;
+}
+
+.right-edge.fork > span:after {
+  border-style: solid;
+  border-width: 20px;
+  left: -20px;
+  top: 0;
+}
+
+.right-edge.fork:before {
+  background: none repeat scroll 0 0 #666666;
+  bottom: 5px;
+  box-shadow: -25px 8px 4px rgba(0, 0, 0, 0.5);
+  height: 20px;
+  left: 22px;
+  transform: rotate(22deg) skew(-18deg, -28deg);
+  width: 80px;
+}
+.right-edge.fork:after {
+  background: none repeat scroll 0 0 #666666;
+  box-shadow: -20px -5px 4px rgba(0, 0, 0, 0.5);
+  height: 20px;
+  left: 22px;
+  top: 5px;
+  transform: rotate(-32deg) skew(18deg, 28deg);
+  width: 80px;
+}
+
+.lblue.right-edge.fork > span {
+  background-color: #42A5D4;
+  background-image: -moz-linear-gradient(right center , #42A5D4 0px, #42A5D4 5px, #24769D 15%, #24769D 65%, #42A5D4 100%);
+}
+.lblue.right-edge.fork > span:after {
+  border-color: #42A5D4 #42A5D4 #42A5D4 transparent;
+}
+
+ a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
