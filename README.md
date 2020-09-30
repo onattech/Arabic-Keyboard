@@ -14,3 +14,12 @@
 
 ## Arabic Keyboard
 This is an Arabic keyboard which looks good, functions well and not bloated with ads.
+
+### Features
+* Text area auto resizes. No unneeded whitespace. No ads.
+* High quality PNG images used instead of CSS for the letters to have maximum compatibility.
+* Once the keyboard reaches the bottom, page is auto scrolled to keep it there.
+* You can type or click or use both.
+* Click animation on keypresses as well.
+* Sound option for people who are new to the Arabic language and would like to hear as they type.
+* Caps lock is particularly useful for typing with diacritics(tashkeel تَشْكِيل). Type without them first. Turn Caps lock on and go over them again for adding diacritics.
