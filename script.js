@@ -79,6 +79,7 @@ function erase() {
 
 function copy() {
   textElem.select()
+  document.execCommand("copy")
 }
 
 function backspace() {
