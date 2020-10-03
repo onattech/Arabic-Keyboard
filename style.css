@@ -301,7 +301,7 @@ li {
 .option,
 .command, */
 #Space {
-  height: 49px;
+  height: 45px;
 }
 
 /* #control {
@@ -461,7 +461,7 @@ input:checked[type="checkbox"]:before{
   font: bold 9pt arial;
   text-align: center;
   width: 70px;
-  height: 48px;
+  height: 45px;
   margin: 5px;
   background: #eff0f2;
   -moz-border-radius: 4px;
@@ -479,7 +479,7 @@ input:checked[type="checkbox"]:before{
 }
 
 #erase, #copy {
-  height:48px;
+  height:45px;
   width:70px;
 }
 
