@@ -67,10 +67,10 @@
             <li><a id= "KeyL" class="key c76" ondragstart="return false;" onclick="add('KeyL')"><img src="PNG/L.png" alt="l"></a></li>
             <li><a id= "Semicolon" class="key c186 alt" ondragstart="return false;" onclick="add('Semicolon')"><img src="PNG/;.png" alt=";"></a></li>
             <li><a id= "Quote" class="key c222 alt" ondragstart="return false;" onclick="add('Quote')"><img src="PNG/'.png" alt="'"></a></li>
-            <li><a class="key c13 alt" ondragstart="return false;" id="Enter" onclick="enter()"><span>return</span></a></li>
+            <li><a class="key c13 alt" ondragstart="return false;" id="Enter" onclick="add('Enter')"><span>return</span></a></li>
         </ul>
         <ul id="zxcvb">
-            <li><a id="ShiftLeft" class="key c16 shiftleft" ondragstart="return false;"><span>Shift</span></a></li>
+            <li><a id="ShiftLeft" class="key c16 shiftleft" ondragstart="return false;" onclick="shiftToggle()"><span>Shift</span></a></li>
             <li><a id="KeyZ" class="key c90" ondragstart="return false;" onclick="add('KeyZ')"><img src="PNG/Z.png" alt="z"></a></li>
             <li><a id="KeyX" class="key c88" ondragstart="return false;" onclick="add('KeyX')"><img src="PNG/X.png" alt="x"></a></li>
             <li><a id="KeyC" class="key c67" ondragstart="return false;" onclick="add('KeyC')"><img src="PNG/C.png" alt="c"></a></li>
@@ -81,7 +81,7 @@
             <li><a id="Comma" class="key c188 alt" ondragstart="return false;" onclick="add('Comma')"><img src="PNG/,.png" alt=","></a></li>
             <li><a id="Period" class="key c190 alt" ondragstart="return false;" onclick="add('Period')"><img src="PNG/DOT.png" alt="dot"></a></li>
             <li><a id="Slash" class="key c191 alt" ondragstart="return false;" onclick="add('Slash')"><img src="PNG/SLASH.png" alt="slash"></a></li>
-            <li><a id="ShiftRight" class="key c16 shiftright" ondragstart="return false;"><span>Shift</span></a></li>
+            <li><a id="ShiftRight" class="key c16 shiftright" ondragstart="return false;" onclick="shiftToggle()"><span>Shift</span></a></li>
         </ul>
         <ul id="bottomrow">
             <li id="ar-sound">sound<input type="checkbox" onclick="soundToggle()"></li>

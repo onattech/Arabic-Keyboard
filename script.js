@@ -2,6 +2,7 @@ let ctrl = false
 let shift = false
 let sound = false
 let caps = false
+let shiftBeingPressed = false
 
 const textElem = document.getElementById('text')
 
@@ -11,6 +12,7 @@ document.addEventListener('keydown', (event) => {
   
   if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
     shift = true
+    shiftBeingPressed = true
   }
   if (event.code === 'ControlLeft' || event.code === 'ControlRight') {
     ctrl = true
@@ -37,6 +39,7 @@ document.addEventListener('keyup', (event) => {
   
   if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
     shift = false
+    shiftBeingPressed = false
   }
   if (event.code === 'ControlLeft' || event.code === 'ControlRight') {
     ctrl = false
@@ -47,6 +50,14 @@ function soundToggle() {
   sound = !sound
 }
 
+function shiftToggle(){
+  shift = true
+  document.getElementById('ShiftLeft').classList.add('keydown')
+  document.getElementById('ShiftRight').classList.add('keydown')
+
+}
+
+// Keeps keyboard in the view
 function handleChange() {
   window.scrollTo(0, document.body.scrollHeight)
 }
@@ -65,10 +76,12 @@ function add(c) {
   textbox.focus()
   textbox.selectionStart = n + 1
   textbox.selectionEnd = n + 1
-}
-
-function enter() {
-  add('Enter')
+  // !shiftBeingPressed && (shift = false) 
+  if (!shiftBeingPressed && shift) {
+    shift = false  
+    document.getElementById('ShiftLeft').classList.toggle('keydown')
+    document.getElementById('ShiftRight').classList.toggle('keydown')
+  }
 }
 
 function erase() {
