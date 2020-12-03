@@ -76,7 +76,6 @@ function add(c) {
   textbox.focus()
   textbox.selectionStart = n + 1
   textbox.selectionEnd = n + 1
-  // !shiftBeingPressed && (shift = false) 
   if (!shiftBeingPressed && shift) {
     shift = false  
     document.getElementById('ShiftLeft').classList.toggle('keydown')
